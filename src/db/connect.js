@@ -8,13 +8,6 @@ db.once('open',function(){
 });
 
 const Details = new mongoose.Schema({
-<<<<<<< HEAD
-=======
-    // image:{
-    //     type:String,
-    //     required:true
-    // },
->>>>>>> 47804d171bcc5542cef62d9cc48506ba903aefb0
     ownername:{
         type:String,
         required:true
