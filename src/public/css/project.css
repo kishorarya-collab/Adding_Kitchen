@@ -1,0 +1,26 @@
+
+.head{
+    text-align: center;
+    margin-top:  10px;
+    margin-left: 5%;
+    width: 90%;
+    /* background-color: rgba(155, 148, 253, 0.205); */
+    padding: 20px;
+    padding-bottom: 10px;
+    border-style: double black;
+}
+
+.container input{
+    float: left;
+}
+.container a{
+    float: right;
+}
+.table{
+    background-color: whitesmoke;
+}
+
+.tbdy{
+    border-style: solid;
+}
+    

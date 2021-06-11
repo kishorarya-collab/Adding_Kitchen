@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Kitchen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/userdata">Kitchen</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="head">
+        <form id="form" action="/registration" method="POST">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="center">
+                            <div class="form-input">
+                                <label for="file-ip-1">Upload Image</label>
+                                <input type="file" id="file-ip-1" name="upimage" accept="image/*" onchange="showPreview(event);">
+                                <div class="preview">
+                                  <img id="file-ip-1-preview">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group mb-3 contain" >
+                          <input type="text" class="form-control" name="ownername" placeholder="Owner's Name*" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group mb-3 contain">
+                          <input type="text" class="form-control" name="address" placeholder="Address*" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group mb-3 contain" >
+                            <input type="text" class="form-control" name="kitchenname" placeholder="Kitchen Name*" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group mb-3 contain" >
+                          <input type="text" class="form-control" name="email" placeholder="Email*" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group mb-3 contain">
+                          <input type="text" class="form-control" name="Fssaino" placeholder="FSSAI Number*" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group mb-3 contain" >
+                            <input type="text" class="form-control" name="phone" placeholder="Phone/Mobile*" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-group mb-3 contain" >
+                          <input type="text" class="form-control" name="preptime" placeholder="Preperation Time*" aria-describedby="basic-addon1">
+                      </div>
+                    </div>
+                    <div class="col">
+                    </div>
+                </div>
+
+
+                <br>
+                <br>
+
+
+                <div class="row">
+                    <div class="col">
+                        <div class="cont" style="width: 660px;">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="North Eastern" name="northeast" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          North Eastern
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Bengali" name="begali" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          Bengali
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Kashmiri" name="kashmiri" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          Kashmiri
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="South Indian" name="southindian" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          South Indian
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Punjabi" name="punjabi" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          Punjabi
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Maharashrian" name="maharashtrian" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          Maharashrian
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Bihari" name="bihari" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          Bihari
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Gujarati" name="gujarati" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          Gujarati
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="Rajasthani" name="rajasthani" >
+                                        <label class="form-check-label" for="flexCheck">
+                                          Rajasthani
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col container">
+                        <h4>Write all the food you checked here.. </h4>
+                        <div class="input-group mb-3 contain" >
+                            <input type="text" class="form-control" name="food" placeholder="All the Food*" aria-describedby="basic-addon1">
+                        </div>
+                    </div>
+                </div>
+                
+
+                <br>
+                <br>
+
+
+                <div class="inp">
+                    <div class="row">
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <p>BreakFast</p>
+                        </div>
+                        <div class="col">
+                            <p>Lunch</p>
+                        </div>
+                        <div class="col">
+                            <p>HighTea</p>
+                        </div>
+                        <div class="col">
+                            <p>Dinner</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Order From</p>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3 contai" >
+                                <input type="text" class="form-control" name="breakfastfrom" placeholder="6:30am" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3 contai" >
+                                <input type="text" class="form-control" name="lunchfrom" placeholder="12:30pm" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3 contai" >
+                                <input type="text" class="form-control" name="highteafrom" placeholder="4:30pm" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3 contai" >
+                                <input type="text" class="form-control" name="dinnerfrom" placeholder="8:30" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>Order to</p>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3 contai" >
+                                <input type="text" class="form-control" name="breakfastto" placeholder="8:30am" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3 contai" >
+                                <input type="text" class="form-control" name="lunchto" placeholder="2:30pm" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3 contai" >
+                                <input type="text" class="form-control" name="highteagto" placeholder="5:30pm" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3 contai" >
+                                <input type="text" class="form-control" name="dinnerto" placeholder="10:30pm" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="button">
+                    <button type="button1" class="btn btn-success" >Save</button>
+                </div>
+            </div>
+        </form>
+    </header>
+    <script>
+        function showPreview(event){
+            if(event.target.files.length > 0){
+                var src = URL.createObjectURL(event.target.files[0]);
+                var preview = document.getElementById("file-ip-1-preview");
+                preview.src = src;
+                preview.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
