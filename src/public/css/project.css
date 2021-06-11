@@ -9,6 +9,38 @@
     padding-bottom: 10px;
     border-style: double black;
 }
+<<<<<<< HEAD
+=======
+/* #form{
+    width: 30%;
+    align-items: center;
+    padding-left: 460px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#username{
+    padding: 20px;
+}
+#password{
+    padding-bottom: 15px;
+}
+.register a{
+    text-decoration: none;
+    color: brown;
+}
+#button{
+    background-color: rgba(172, 65, 65, 0.363);
+    cursor: pointer;
+    color: blue;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 2px;
+}
+#button:hover{
+    color: black;
+    background-color: rgba(221, 79, 79, 0.39);
+} */
+>>>>>>> 47804d171bcc5542cef62d9cc48506ba903aefb0
 
 .container input{
     float: left;
